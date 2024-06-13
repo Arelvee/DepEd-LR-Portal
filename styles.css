@@ -109,7 +109,6 @@ nav li ul li a {
     flex-grow: 2;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
 .search-bar input {
     width: 40%;
@@ -119,12 +118,11 @@ nav li ul li a {
 .search-bar .filter-dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 10px;
 }
 .search-bar .filter-dropdown button {
     background-color: rgb(24, 130, 24);
     color: white;
-    padding: 5px 10px;
+    padding:7.61px 10px;
     border: none;
     cursor: pointer;
 }
@@ -163,9 +161,10 @@ search-bar .filter-dropdown button:hover {
   }
   
 .search-bar .fa-search {
-    margin-left: 10px;
     color: white;
     cursor: pointer;
+    padding: 7.61px;
+    background-color: rgb(24, 130, 24);
 }
 .nav-right ul {
     display: flex;

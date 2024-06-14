@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+}
+
+.welcome-section, .form-section {
+    padding: 20px;
+    width: 50%;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1 span {
+    color: #007bff;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.icons, .media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i, .media-icons i {
+    font-size: 60px;
+    color: #41b304;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-section {
+    background-color: #e6f3ff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 40%;
+    margin-top: 30px;
+}
+
+.form-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.toggle {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #e6f3ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    color: #6c757d;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto 0;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+form input::placeholder, form select {
+    color: #6c757d;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #b3ad00;
+}

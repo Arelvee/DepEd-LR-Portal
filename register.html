@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR Portal For Learners</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="registerStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon"> <!-- Add this line for the favicon -->
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="Logo">
+        <h1>DEPED LEARNING RESOURCE PORTAL</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Resource <i class="fas fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="#">Sub Item 1</a></li>
+                    <li><a href="#">Sub Item 2</a></li>
+                    <li><a href="#">Sub Item 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Media Gallery</a></li>
+        </ul>
+        <div class="search-bar">
+            <div class="filter-dropdown">
+                <button>Filter resource by <i class="fas fa-caret-down"></i></button>
+                <div class="filter-dropdown-content">
+                    <a href="#">Filter 1</a>
+                    <a href="#">Filter 2</a>
+                    <a href="#">Filter 3</a>
+                </div>
+            </div>
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-search"></i>
+        </div>
+        <ul>
+            <li><a href="#">Help <i class="fas fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="#">Sub Item 1</a></li>
+                    <li><a href="#">Sub Item 2</a></li>
+                </ul>
+            </li>
+            <li class="register"><a href="./register.html">Register</a></li>
+            <li class="login"><a href="./login.html">Login</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="welcome-section">
+            <h1>Welcome to <span>DepEd Learning Resource Portal!</span></h1>
+            <p>
+                This portal is designed to provide you with access to quality learning and teaching resources such as Learning Material,
+                Lesson Plan, Learning Guide, Learning Module and Full course that are aligned with K to 12 curriculum. These can be used as 
+                primary bases or as supplement to teaching and learning processes.
+            </p>
+            <div class="icons">
+                <i class="fas fa-book-open"></i>
+                <i class="fas fa-chalkboard-teacher"></i>
+                <i class="fas fa-lightbulb"></i>
+                <i class="fas fa-book"></i>
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <p>
+                You may also create your own resources using any of the over 5000 <span>illustration, photo, video and audio files</span> in the Media Gallery.
+            </p>
+            <div class="media-icons">
+                <i class="fas fa-palette"></i>
+                <i class="fas fa-camera"></i>
+                <i class="fas fa-video"></i>
+                <i class="fas fa-music"></i>
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>Create Portal Account</h2>
+            <div class="toggle">
+                <label class="radio-label">
+                    <input type="radio" name="role" value="learner"> Learner
+                </label>
+                <label class="radio-label selected">
+                    <input type="radio" name="role" value="educator" checked> Educator
+                </label>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Last Name">
+                    <label for="middleName">Middle Name</label>
+                    <input type="text" id="middleName" placeholder="Middle Name">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="E-mail Address">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Repeat Password">
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" id="birthdate" placeholder="Birthdate">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>                
+                    <select id="gender">
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+<script src="dropdownClick.js"></script>
+</body>
+</html>
